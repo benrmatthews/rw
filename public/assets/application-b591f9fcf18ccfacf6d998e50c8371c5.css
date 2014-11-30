@@ -1,0 +1,4652 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #fed136;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #fed136;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #fec503;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #fed136;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-primary .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #fed136;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fed136;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #fed136;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #fec503;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(254,209,54,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+    margin: 0;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #f1f1f1;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading {
+    text-transform: none;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        margin-bottom: 100px;
+        min-height: 100px;
+    }
+
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .timeline>li .timeline-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+}
+
+@media(min-width:992px) {
+    .timeline>li {
+        min-height: 150px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .timeline>li {
+        min-height: 170px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 40px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 100px 20px 20px;
+    }
+}
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+aside.clients img {
+    margin: 50px auto;
+}
+
+section#contact {
+    background-color: #222;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#contact .section-heading {
+    color: #fff;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #fed136;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+::selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #fed136;
+}
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+body {
+    overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-muted {
+    color: #777;
+}
+
+.text-primary {
+    color: #fed136;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a {
+    color: #fed136;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #fec503;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #fed136;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-primary .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #f6bf01;
+    color: #fff;
+    background-color: #fec503;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.btn-xl .badge {
+    color: #fed136;
+    background-color: #fff;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #fed136;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fed136;
+    background-color: #fed136;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #fed136;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: #fed136;
+}
+
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #fec503;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 25px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+
+    .navbar-default.navbar-shrink {
+        padding: 10px 0;
+        background-color: #222;
+    }
+
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url(../img/header-bg.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+}
+
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(254,209,54,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+    margin: 0;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px;
+    }
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #f1f1f1;
+}
+
+.timeline>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both;
+}
+
+.timeline>li .timeline-panel {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #fed136;
+}
+
+.timeline>li .timeline-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline>li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading {
+    text-transform: none;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+    .timeline:before {
+        left: 50%;
+    }
+
+    .timeline>li {
+        margin-bottom: 100px;
+        min-height: 100px;
+    }
+
+    .timeline>li .timeline-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .timeline>li .timeline-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+}
+
+@media(min-width:992px) {
+    .timeline>li {
+        min-height: 150px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 20px 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .timeline>li {
+        min-height: 170px;
+    }
+
+    .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    .timeline>li .timeline-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+
+    .timeline>li .timeline-image h4 {
+        margin-top: 40px;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+        padding: 0 100px 20px 20px;
+    }
+}
+
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-member img {
+    margin: 0 auto;
+    border: 7px solid #fff;
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
+}
+
+aside.clients img {
+    margin: 50px auto;
+}
+
+section#contact {
+    background-color: #222;
+    background-image: url(../img/map-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#contact .section-heading {
+    color: #fff;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #fed136;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+::selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #fed136;
+}
+/*!
+ * Bootstrap v3.3.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* line 8, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 13, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.text-muted {
+  color: #777;
+}
+
+/* line 17, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.text-primary {
+  color: #fed136;
+}
+
+/* line 21, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* line 26, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+p.large {
+  font-size: 16px;
+}
+
+/* line 34, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: 0;
+}
+
+/* line 38, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+a {
+  color: #fed136;
+}
+
+/* line 45, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fec503;
+}
+
+/* line 54, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+/* line 60, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.img-centered {
+  margin: 0 auto;
+}
+
+/* line 64, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+
+/* line 68, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.bg-darkest-gray {
+  background-color: #222;
+}
+
+/* line 72, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-primary, .submit, .authform .button, .button-xs {
+  border-color: #fed136;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 85, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-primary:hover, .submit:hover, .authform .button:hover, .button-xs:hover,
+.btn-primary:focus,
+.submit:focus,
+.authform .button:focus,
+.button-xs:focus,
+.btn-primary:active,
+.submit:active,
+.authform .button:active,
+.button-xs:active,
+.btn-primary.active,
+.active.submit,
+.authform .active.button,
+.active.button-xs,
+.open .dropdown-toggle.btn-primary,
+.open .dropdown-toggle.submit,
+.open .authform .dropdown-toggle.button,
+.authform .open .dropdown-toggle.button,
+.open .dropdown-toggle.button-xs {
+  border-color: #f6bf01;
+  color: #fff;
+  background-color: #fec503;
+}
+
+/* line 93, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-primary:active, .submit:active, .authform .button:active, .button-xs:active,
+.btn-primary.active,
+.active.submit,
+.authform .active.button,
+.active.button-xs,
+.open .dropdown-toggle.btn-primary,
+.open .dropdown-toggle.submit,
+.open .authform .dropdown-toggle.button,
+.authform .open .dropdown-toggle.button,
+.open .dropdown-toggle.button-xs {
+  background-image: none;
+}
+
+/* line 111, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-primary.disabled, .disabled.submit, .authform .disabled.button, .disabled.button-xs,
+.btn-primary[disabled],
+[disabled].submit,
+.authform [disabled].button,
+[disabled].button-xs,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .submit,
+fieldset[disabled] .authform .button,
+.authform fieldset[disabled] .button,
+fieldset[disabled] .button-xs,
+.btn-primary.disabled:hover,
+.disabled.submit:hover,
+.authform .disabled.button:hover,
+.disabled.button-xs:hover,
+.btn-primary[disabled]:hover,
+[disabled].submit:hover,
+.authform [disabled].button:hover,
+[disabled].button-xs:hover,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .submit:hover,
+fieldset[disabled] .authform .button:hover,
+.authform fieldset[disabled] .button:hover,
+fieldset[disabled] .button-xs:hover,
+.btn-primary.disabled:focus,
+.disabled.submit:focus,
+.authform .disabled.button:focus,
+.disabled.button-xs:focus,
+.btn-primary[disabled]:focus,
+[disabled].submit:focus,
+.authform [disabled].button:focus,
+[disabled].button-xs:focus,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .submit:focus,
+fieldset[disabled] .authform .button:focus,
+.authform fieldset[disabled] .button:focus,
+fieldset[disabled] .button-xs:focus,
+.btn-primary.disabled:active,
+.disabled.submit:active,
+.authform .disabled.button:active,
+.disabled.button-xs:active,
+.btn-primary[disabled]:active,
+[disabled].submit:active,
+.authform [disabled].button:active,
+[disabled].button-xs:active,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .submit:active,
+fieldset[disabled] .authform .button:active,
+.authform fieldset[disabled] .button:active,
+fieldset[disabled] .button-xs:active,
+.btn-primary.disabled.active,
+.disabled.active.submit,
+.authform .disabled.active.button,
+.disabled.active.button-xs,
+.btn-primary[disabled].active,
+[disabled].active.submit,
+.authform [disabled].active.button,
+[disabled].active.button-xs,
+fieldset[disabled] .btn-primary.active,
+fieldset[disabled] .active.submit,
+fieldset[disabled] .authform .active.button,
+.authform fieldset[disabled] .active.button,
+fieldset[disabled] .active.button-xs {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 116, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-primary .badge, .submit .badge, .authform .button .badge, .button-xs .badge {
+  color: #fed136;
+  background-color: #fff;
+}
+
+/* line 121, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-xl {
+  padding: 20px 40px;
+  border-color: #fed136;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 137, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  border-color: #f6bf01;
+  color: #fff;
+  background-color: #fec503;
+}
+
+/* line 145, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+
+/* line 163, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 168, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn-xl .badge {
+  color: #fed136;
+  background-color: #fff;
+}
+
+/* line 173, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default {
+  border-color: transparent;
+  background-color: #222;
+}
+
+/* line 178, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .navbar-brand {
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  color: #fed136;
+}
+
+/* line 186, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #fec503;
+}
+
+/* line 190, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+
+/* line 194, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .navbar-toggle {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 199, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* line 204, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fed136;
+}
+
+/* line 208, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* line 217, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  outline: 0;
+  color: #fed136;
+}
+
+/* line 222, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .navbar-nav > .active > a {
+  border-radius: 0;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 229, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #fec503;
+}
+
+@media (min-width: 768px) {
+  /* line 235, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .navbar-default {
+    padding: 25px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  /* line 244, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  /* line 251, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+
+  /* line 255, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .navbar-default.navbar-shrink {
+    padding: 10px 0;
+    background-color: #222;
+  }
+
+  /* line 260, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+/* line 265, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+header {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 278, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* line 283, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+header .intro-text .intro-lead-in {
+  margin-bottom: 25px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+}
+
+/* line 291, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+header .intro-text .intro-heading {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+@media (min-width: 768px) {
+  /* line 301, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+
+  /* line 306, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+  }
+
+  /* line 314, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  header .intro-text .intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+  }
+}
+/* line 324, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section {
+  padding: 100px 0;
+}
+
+/* line 328, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+/* line 334, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  /* line 344, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  section {
+    padding: 150px 0;
+  }
+}
+/* line 349, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+/* line 354, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+/* line 359, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* line 366, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(254, 209, 54, 0.9);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+/* line 377, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+/* line 381, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* line 392, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+/* line 397, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+/* line 401, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-caption {
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* line 409, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+/* line 414, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio .portfolio-item .portfolio-caption p {
+  margin: 0;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* line 421, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  /* line 426, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* line 431, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 437, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  background-color: #f1f1f1;
+}
+
+/* line 448, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li {
+  position: relative;
+  margin-bottom: 50px;
+  min-height: 50px;
+}
+
+/* line 455, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+/* line 460, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li:after {
+  clear: both;
+}
+
+/* line 464, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li .timeline-panel {
+  float: right;
+  position: relative;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+/* line 472, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+/* line 479, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+/* line 486, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li .timeline-image {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  border: 7px solid #f1f1f1;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 500, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li .timeline-image h4 {
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/* line 506, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+/* line 512, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+/* line 519, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+/* line 526, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 530, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+/* line 535, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+
+/* line 540, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 545, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline:before {
+    left: 50%;
+  }
+
+  /* line 549, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+
+  /* line 554, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+
+  /* line 561, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+
+  /* line 568, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-image h4 {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  /* line 574, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 582, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li {
+    min-height: 150px;
+  }
+
+  /* line 586, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+
+  /* line 590, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+
+  /* line 596, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-image h4 {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  /* line 602, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 608, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li {
+    min-height: 170px;
+  }
+
+  /* line 612, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+
+  /* line 616, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+
+  /* line 622, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+
+  /* line 626, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+/* line 631, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 636, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid #fff;
+}
+
+/* line 641, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+/* line 647, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.team-member p {
+  margin-top: 0;
+}
+
+/* line 651, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+aside.clients img {
+  margin: 50px auto;
+}
+
+/* line 655, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact {
+  background-color: #222;
+  background-image: url(../img/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 662, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact .section-heading {
+  color: #fff;
+}
+
+/* line 666, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+/* line 671, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+/* line 675, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+/* line 679, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+
+/* line 683, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+/* line 688, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 695, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact:-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 702, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 709, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 716, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+/* line 720, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+/* line 725, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+footer span.copyright {
+  text-transform: uppercase;
+  text-transform: none;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+/* line 732, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+footer ul.quicklinks {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-transform: none;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+/* line 740, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+/* line 744, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: #222;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+/* line 761, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+
+/* line 768, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.btn:focus, .submit:focus, .authform .button:focus, .button-xs:focus,
+.btn:active,
+.submit:active,
+.authform .button:active,
+.button-xs:active,
+.btn.active,
+.active.submit,
+.authform .active.button,
+.active.button-xs,
+.btn:active:focus,
+.submit:active:focus,
+.authform .button:active:focus,
+.button-xs:active:focus {
+  outline: 0;
+}
+
+/* line 772, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .modal-content {
+  padding: 100px 0;
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 783, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+
+/* line 788, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+
+/* line 792, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* line 799, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* line 804, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+
+/* line 808, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 818, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .close-modal:hover {
+  opacity: .3;
+}
+
+/* line 822, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .close-modal .lr {
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  background-color: #222;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 833, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+.portfolio-modal .close-modal .lr .rl {
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  background-color: #222;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 843, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+/* line 848, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+/* line 853, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+img::selection {
+  background: 0 0;
+}
+
+/* line 857, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+img::-moz-selection {
+  background: 0 0;
+}
+
+/* line 861, /home/action/workspace/rw/app/assets/stylesheets/bootstrap.css */
+body {
+  webkit-tap-highlight-color: #fed136;
+}
+
+/* line 6, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+img {
+  margin: 0 auto;
+}
+
+/* line 11, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-brand {
+  font-size: inherit;
+}
+
+/* line 36, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+main {
+  background-color: #eee;
+  padding-bottom: 80px;
+  width: 100%;
+  margin-top: 51px;
+}
+
+/* line 43, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section {
+  margin-top: 20px;
+}
+
+/* line 51, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.authform {
+  padding-top: 30px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* line 56, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.authform form {
+  padding-bottom: 40px;
+}
+
+/* line 61, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.authform .right {
+  float: right !important;
+}
+
+/* line 75, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#error_explanation h2 {
+  font-size: 16px;
+}
+
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* line 90, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 95, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.text-muted {
+  color: #777;
+}
+
+/* line 99, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.text-primary {
+  color: #fed136;
+}
+
+/* line 103, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* line 108, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+p.large {
+  font-size: 16px;
+}
+
+/* line 116, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: 0;
+}
+
+/* line 120, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+a {
+  color: #fed136;
+}
+
+/* line 127, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fec503;
+}
+
+/* line 136, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+/* line 142, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.img-centered {
+  margin: 0 auto;
+}
+
+/* line 146, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+
+/* line 150, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.bg-darkest-gray {
+  background-color: #222;
+}
+
+/* line 154, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-primary, .submit, .authform .button, .button-xs {
+  border-color: #fed136;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 167, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-primary:hover, .submit:hover, .authform .button:hover, .button-xs:hover,
+.btn-primary:focus,
+.submit:focus,
+.authform .button:focus,
+.button-xs:focus,
+.btn-primary:active,
+.submit:active,
+.authform .button:active,
+.button-xs:active,
+.btn-primary.active,
+.active.submit,
+.authform .active.button,
+.active.button-xs,
+.open .dropdown-toggle.btn-primary,
+.open .dropdown-toggle.submit,
+.open .authform .dropdown-toggle.button,
+.authform .open .dropdown-toggle.button,
+.open .dropdown-toggle.button-xs {
+  border-color: #f6bf01;
+  color: #fff;
+  background-color: #fec503;
+}
+
+/* line 175, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-primary:active, .submit:active, .authform .button:active, .button-xs:active,
+.btn-primary.active,
+.active.submit,
+.authform .active.button,
+.active.button-xs,
+.open .dropdown-toggle.btn-primary,
+.open .dropdown-toggle.submit,
+.open .authform .dropdown-toggle.button,
+.authform .open .dropdown-toggle.button,
+.open .dropdown-toggle.button-xs {
+  background-image: none;
+}
+
+/* line 193, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-primary.disabled, .disabled.submit, .authform .disabled.button, .disabled.button-xs,
+.btn-primary[disabled],
+[disabled].submit,
+.authform [disabled].button,
+[disabled].button-xs,
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .submit,
+fieldset[disabled] .authform .button,
+.authform fieldset[disabled] .button,
+fieldset[disabled] .button-xs,
+.btn-primary.disabled:hover,
+.disabled.submit:hover,
+.authform .disabled.button:hover,
+.disabled.button-xs:hover,
+.btn-primary[disabled]:hover,
+[disabled].submit:hover,
+.authform [disabled].button:hover,
+[disabled].button-xs:hover,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .submit:hover,
+fieldset[disabled] .authform .button:hover,
+.authform fieldset[disabled] .button:hover,
+fieldset[disabled] .button-xs:hover,
+.btn-primary.disabled:focus,
+.disabled.submit:focus,
+.authform .disabled.button:focus,
+.disabled.button-xs:focus,
+.btn-primary[disabled]:focus,
+[disabled].submit:focus,
+.authform [disabled].button:focus,
+[disabled].button-xs:focus,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .submit:focus,
+fieldset[disabled] .authform .button:focus,
+.authform fieldset[disabled] .button:focus,
+fieldset[disabled] .button-xs:focus,
+.btn-primary.disabled:active,
+.disabled.submit:active,
+.authform .disabled.button:active,
+.disabled.button-xs:active,
+.btn-primary[disabled]:active,
+[disabled].submit:active,
+.authform [disabled].button:active,
+[disabled].button-xs:active,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .submit:active,
+fieldset[disabled] .authform .button:active,
+.authform fieldset[disabled] .button:active,
+fieldset[disabled] .button-xs:active,
+.btn-primary.disabled.active,
+.disabled.active.submit,
+.authform .disabled.active.button,
+.disabled.active.button-xs,
+.btn-primary[disabled].active,
+[disabled].active.submit,
+.authform [disabled].active.button,
+[disabled].active.button-xs,
+fieldset[disabled] .btn-primary.active,
+fieldset[disabled] .active.submit,
+fieldset[disabled] .authform .active.button,
+.authform fieldset[disabled] .active.button,
+fieldset[disabled] .active.button-xs {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 198, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-primary .badge, .submit .badge, .authform .button .badge, .button-xs .badge {
+  color: #fed136;
+  background-color: #fff;
+}
+
+/* line 203, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-xl {
+  padding: 20px 40px;
+  border-color: #fed136;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 219, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  border-color: #f6bf01;
+  color: #fff;
+  background-color: #fec503;
+}
+
+/* line 227, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+
+/* line 245, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 250, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn-xl .badge {
+  color: #fed136;
+  background-color: #fff;
+}
+
+/* line 255, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default {
+  border-color: transparent;
+  background-color: #222;
+}
+
+/* line 260, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .navbar-brand {
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  color: #fed136;
+}
+
+/* line 268, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #fec503;
+}
+
+/* line 272, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+
+/* line 276, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .navbar-toggle {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 281, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* line 286, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fed136;
+}
+
+/* line 290, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* line 299, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  outline: 0;
+  color: #fed136;
+}
+
+/* line 304, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .navbar-nav > .active > a {
+  border-radius: 0;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 311, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #fec503;
+}
+
+@media (min-width: 768px) {
+  /* line 317, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .navbar-default {
+    padding: 25px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  /* line 326, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  /* line 333, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+
+  /* line 337, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .navbar-default.navbar-shrink {
+    padding: 10px 0;
+    background-color: #222;
+  }
+
+  /* line 342, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+/* line 347, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+header {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 360, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* line 365, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+header .intro-text .intro-lead-in {
+  margin-bottom: 25px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+}
+
+/* line 373, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+header .intro-text .intro-heading {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+@media (min-width: 768px) {
+  /* line 383, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+
+  /* line 388, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+  }
+
+  /* line 396, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  header .intro-text .intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+  }
+}
+/* line 406, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section {
+  padding: 100px 0;
+}
+
+/* line 410, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+/* line 416, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  /* line 426, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  section {
+    padding: 150px 0;
+  }
+}
+/* line 431, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+/* line 436, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+/* line 441, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* line 448, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(254, 209, 54, 0.9);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+/* line 459, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+/* line 463, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* line 474, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+/* line 479, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+/* line 483, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-caption {
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* line 491, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+/* line 496, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio .portfolio-item .portfolio-caption p {
+  margin: 0;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* line 503, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  /* line 508, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* line 513, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 519, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  background-color: #f1f1f1;
+}
+
+/* line 530, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li {
+  position: relative;
+  margin-bottom: 50px;
+  min-height: 50px;
+}
+
+/* line 537, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+/* line 542, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li:after {
+  clear: both;
+}
+
+/* line 546, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li .timeline-panel {
+  float: right;
+  position: relative;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+/* line 554, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+/* line 561, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+/* line 568, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li .timeline-image {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  border: 7px solid #f1f1f1;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 582, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li .timeline-image h4 {
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/* line 588, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+/* line 594, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+/* line 601, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+/* line 608, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 612, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+/* line 617, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+
+/* line 622, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 627, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline:before {
+    left: 50%;
+  }
+
+  /* line 631, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+
+  /* line 636, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+
+  /* line 643, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+
+  /* line 650, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-image h4 {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  /* line 656, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 664, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li {
+    min-height: 150px;
+  }
+
+  /* line 668, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+
+  /* line 672, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+
+  /* line 678, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-image h4 {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  /* line 684, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 690, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li {
+    min-height: 170px;
+  }
+
+  /* line 694, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+
+  /* line 698, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+
+  /* line 704, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+
+  /* line 708, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+/* line 713, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 718, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid #fff;
+}
+
+/* line 723, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+/* line 729, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.team-member p {
+  margin-top: 0;
+}
+
+/* line 733, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+aside.clients img {
+  margin: 50px auto;
+}
+
+/* line 737, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact {
+  background-color: #222;
+  background-image: url(../img/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 744, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact .section-heading {
+  color: #fff;
+}
+
+/* line 748, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+/* line 753, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+/* line 757, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+/* line 761, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+
+/* line 765, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+/* line 770, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 777, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact:-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 784, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 791, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 798, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+/* line 802, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+/* line 807, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+footer span.copyright {
+  text-transform: uppercase;
+  text-transform: none;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+/* line 814, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+footer ul.quicklinks {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-transform: none;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+/* line 822, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+/* line 826, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: #222;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+/* line 843, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+
+/* line 850, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.btn:focus, .submit:focus, .authform .button:focus, .button-xs:focus,
+.btn:active,
+.submit:active,
+.authform .button:active,
+.button-xs:active,
+.btn.active,
+.active.submit,
+.authform .active.button,
+.active.button-xs,
+.btn:active:focus,
+.submit:active:focus,
+.authform .button:active:focus,
+.button-xs:active:focus {
+  outline: 0;
+}
+
+/* line 854, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .modal-content {
+  padding: 100px 0;
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 865, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+
+/* line 870, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+
+/* line 874, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* line 881, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* line 886, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+
+/* line 890, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 900, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .close-modal:hover {
+  opacity: .3;
+}
+
+/* line 904, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .close-modal .lr {
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  background-color: #222;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 915, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+.portfolio-modal .close-modal .lr .rl {
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  background-color: #222;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 925, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+/* line 930, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+/* line 935, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+img::selection {
+  background: 0 0;
+}
+
+/* line 939, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+img::-moz-selection {
+  background: 0 0;
+}
+
+/* line 943, /home/action/workspace/rw/app/assets/stylesheets/framework_and_overrides.css.scss */
+body {
+  webkit-tap-highlight-color: #fed136;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+
+ */
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.text-muted {
+  color: #777777;
+}
+.text-primary {
+  color: #fed136;
+}
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+p.large {
+  font-size: 16px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+a {
+  color: #fed136;
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fec503;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.img-centered {
+  margin: 0 auto;
+}
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+.bg-darkest-gray {
+  background-color: #222222;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+.btn-primary .badge {
+  color: #fed136;
+  background-color: #ffffff;
+}
+.btn-xl {
+  color: #ffffff;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color: #ffffff;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+.btn-xl .badge {
+  color: #fed136;
+  background-color: #ffffff;
+}
+.navbar-default {
+  background-color: #222222;
+  border-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #fec503;
+}
+.navbar-default .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+.navbar-default .navbar-toggle {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fed136;
+}
+.navbar-default .nav li a {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+}
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  color: #fed136;
+  outline: none;
+}
+.navbar-default .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #fed136;
+}
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #fec503;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+  .navbar-default.navbar-shrink {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+header {
+  background-image: url('../images/header-bg.jpg');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+section {
+  padding: 100px 0;
+}
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+@media (min-width: 768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #f1f1f1;
+  left: 40px;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+.timeline > li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #fed136;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px;
+  }
+}
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.team-member p {
+  margin-top: 0;
+}
+aside.clients img {
+  margin: 50px auto;
+}
+section#contact {
+  background-color: #222222;
+  background-image: url('../img/map-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section#contact .section-heading {
+  color: white;
+}
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+section#contact .form-group input.form-control {
+  height: auto;
+}
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+section#contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+section#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+section#contact :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bbbbbb;
+}
+section#contact .text-danger {
+  color: #e74c3c;
+}
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+footer span.copyright {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}
+footer ul.quicklinks {
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}
+ul.social-buttons {
+  margin-bottom: 0;
+}
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136;
+}
+::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: #fed136;
+}
