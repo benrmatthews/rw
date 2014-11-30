@@ -17,6 +17,7 @@ gem 'pundit'
 gem 'simple_form'
 gem 'thin'
 gem 'upmin-admin'
+gem 'rails_serve_static_assets'
 
 group :development do
   gem 'better_errors'
