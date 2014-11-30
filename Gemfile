@@ -17,8 +17,6 @@ gem 'pundit'
 gem 'simple_form'
 gem 'thin'
 gem 'upmin-admin'
-gem "therubyracer"
-gem "less-rails"
 
 group :development do
   gem 'better_errors'
