@@ -915,7 +915,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #ca151e;
   text-decoration: none;
 }
 a:hover,
@@ -1153,7 +1153,7 @@ mark,
   color: #777;
 }
 .text-primary {
-  color: #428bca;
+  color: #ca151e;
 }
 a.text-primary:hover {
   color: #3071a9;
@@ -1184,7 +1184,7 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: #ca151e;
 }
 a.bg-primary:hover {
   background-color: #3071a9;
@@ -2880,7 +2880,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: #ca151e;
   border-color: #357ebd;
 }
 .btn-primary:hover,
@@ -2916,11 +2916,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #428bca;
+  background-color: #ca151e;
   border-color: #357ebd;
 }
 .btn-primary .badge {
-  color: #428bca;
+  color: #ca151e;
   background-color: #fff;
 }
 .btn-success {
